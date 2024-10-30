@@ -1,7 +1,7 @@
-const portuguese = {
+const portugueseAo = {
   language: {
-    label: 'Brazilian Portuguese',
-    locale: 'pt'
+    label: 'Portugueseao',
+    locale: 'pt-ao'
   },
   seo: {
     keywords:
@@ -46,7 +46,7 @@ const portuguese = {
       }
     },
     description: {
-      top: 'Aprenda a se conhecer melhor com um teste de personalidade <violet>gratuito</violet>.',
+      top: ' Aprenda a se conhecer melhor com um teste de personalidade <violet>gratuito</violet>.',
       subtop: 'O',
       subtop2:
         ' é o modelo psicológico mais validado cientificamente e confiável para medir a personalidade.',
@@ -220,4 +220,4 @@ inventário é de <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
   }
 };
 
-export default portuguese;
+export default portugueseAo;

@@ -19,7 +19,7 @@ import { siteConfig } from '@/config/site';
 import clsx from 'clsx';
 
 import { ThemeSwitch } from '@/components/theme-switch';
-import { TwitterIcon, GithubIcon, Logo } from '@/components/icons';
+import { TwitterIcon, GithubIcon, Logo, LogoKepya } from '@/components/icons';
 import { Link as NextLink } from '../navigation';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
@@ -57,8 +57,8 @@ export const Navbar = ({ navItems, navMenuItems }: NavbarProps) => {
             href='/'
             aria-label='Home'
           >
-            <Logo />
-          </NextLink>
+            <LogoKepya size={50} height={100} />
+            </NextLink>
         </NavbarBrand>
         <div className='hidden md:flex gap-4 justify-start ml-2'>
           {navItems.map((item) => (

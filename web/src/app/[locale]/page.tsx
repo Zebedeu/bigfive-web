@@ -110,14 +110,15 @@ export default function Home({ params: { locale } }: Props) {
                     variant: 'bordered',
                     radius: 'full',
                     size: 'lg',
-                    fullWidth: true
+                    fullWidth: true,
+                    color: 'danger'
                   }),
                   'md:w-auto'
                 )}
-                href={siteConfig.links.github}
+                href={siteConfig.links.kepya}
               >
-                <GithubIcon size={20} />
-                GitHub
+                <PlusLinearIcon size={20} />
+                KEPYA
               </Link>
             </div>
           </div>
@@ -127,16 +128,16 @@ export default function Home({ params: { locale } }: Props) {
           </div>
         </section>
 
-        <div className='mt-20 mx-2'>
+        {/* <div className='mt-20 mx-2'>
           <FeaturesGrid features={features} />
-        </div>
+        </div> */}
       </div>
 
-      <section className='border-t border-b border-divider px-8 mt-16 lg:mt-44 text-center'>
+    {/*   <section className='border-t border-b border-divider px-8 mt-16 lg:mt-44 text-center'>
         <div className='my-8'>
           <h1 className={title()}>{testsTaken}</h1>
         </div>
-      </section>
+      </section> */}
 
       <div className='mt-20 text-center'>
         <h1 className={title()}>{t('compare.title')}</h1>
@@ -148,7 +149,7 @@ export default function Home({ params: { locale } }: Props) {
         </div>
       </div>
 
-      <div className='text-center h-64 md:h-80 mt-44 md:mt-56'>
+    {/*   <div className='text-center h-64 md:h-80 mt-44 md:mt-56'>
         <SonarPulse
           color='#7928CA'
           icon={
@@ -261,9 +262,13 @@ export default function Home({ params: { locale } }: Props) {
             Show all articles ...
           </Link>
         </div>
-      </div>
+      </div> 
+      
+      
 
       <Translated />
+      */}
+
     </section>
   );
 }

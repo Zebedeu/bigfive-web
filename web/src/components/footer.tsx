@@ -29,7 +29,7 @@ export default function Footer({ footerLinks }: FooterProps) {
           </span> */}
         </div>
         <div className='w-1/2 flex justify-end'>
-          <NextUILink
+        {/*   <NextUILink
             isExternal
             href={siteConfig.links.twitter}
             aria-label='Twitter'
@@ -42,7 +42,7 @@ export default function Footer({ footerLinks }: FooterProps) {
             aria-label='Github'
           >
             <GithubIcon size={48} className='text-default-500' />
-          </NextUILink>
+          </NextUILink> */}
           <NextUILink
             isExternal
             href={siteConfig.links.linkedIn}

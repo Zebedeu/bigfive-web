@@ -6,7 +6,8 @@ import {
   GithubIcon,
   LinkedInIcon,
   FacebookIcon,
-  Logo
+  Logo,
+  LogoKepya
 } from '@/components/icons';
 import { siteConfig } from '@/config/site';
 
@@ -23,9 +24,9 @@ export default function Footer({ footerLinks }: FooterProps) {
     <footer className='container mx-auto max-w-7xl py-24 px-12'>
       <div className='container mx-auto flex justify-between'>
         <div className='w-1/2'>
-          <span className='text-center'>
-            <Logo />
-          </span>
+          {/* <span className='text-center'>
+            <LogoKepya size={50} />
+          </span> */}
         </div>
         <div className='w-1/2 flex justify-end'>
           <NextUILink

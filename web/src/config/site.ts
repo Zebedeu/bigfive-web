@@ -2,9 +2,9 @@ import { getTranslations } from 'next-intl/server';
 
 export type SiteConfig = typeof siteConfig;
 
-export const basePath = 'https://bigfive-test.com';
+export const basePath = 'http://personality-test.kepya.co.ao';
 
-export const supportEmail = 'bigfive-test@rubynor.com';
+export const supportEmail = 'it@kepya.co.ao';
 
 export type Language = {
   code: string;
@@ -116,7 +116,8 @@ export const siteConfig = {
     twitter: 'https://twitter.com/rubynor',
     linkedIn: 'https://ao.linkedin.com/company/kepya',
     facebook: 'https://www.facebook.com/kepyamarket/',
-    kepya: 'https://www.kepya.co.ao'
+    kepya: 'https://www.kepya.co.ao',
+    test: 'http://localhost:3000/pt-ao'
   }
 };
 

@@ -1,7 +1,9 @@
 import { useTranslations } from 'next-intl';
-import { Link } from '@nextui-org/link';
+import {Link} from "@nextui-org/react";
 import { button as buttonStyles } from '@nextui-org/theme';
 import { title, subtitle } from '@/components/primitives';
+import { basePath, locales } from '@/config/site';
+
 import clsx from 'clsx';
 import { FeaturesGrid } from '@/components/features-grid';
 import {
@@ -89,7 +91,7 @@ export default function Home({ params: { locale } }: Props) {
 
             <div className='flex flex-col md:flex-row items-center gap-4 justify-center'>
               <Link
-                href='/test'
+                href={`${basePath}/test`}
                 className={clsx(
                   buttonStyles({
                     color: 'primary',
@@ -124,7 +126,7 @@ export default function Home({ params: { locale } }: Props) {
           </div>
 
           <div className='font-normal text-default-500 block max-w-full text-center underline'>
-            {t('no_registration')}
+            {t('make_registration')}
           </div>
         </section>
 

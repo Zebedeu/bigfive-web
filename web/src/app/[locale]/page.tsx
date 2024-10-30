@@ -1,7 +1,9 @@
 import { useTranslations } from 'next-intl';
-import { Link } from '@nextui-org/link';
+import {Link} from "@nextui-org/react";
 import { button as buttonStyles } from '@nextui-org/theme';
 import { title, subtitle } from '@/components/primitives';
+import { basePath, locales } from '@/config/site';
+
 import clsx from 'clsx';
 import { FeaturesGrid } from '@/components/features-grid';
 import {
@@ -89,17 +91,8 @@ export default function Home({ params: { locale } }: Props) {
 
             <div className='flex flex-col md:flex-row items-center gap-4 justify-center'>
               <Link
-                href='/test'
-                className={clsx(
-                  buttonStyles({
-                    color: 'primary',
-                    radius: 'full',
-                    variant: 'shadow',
-                    size: 'lg',
-                    fullWidth: true
-                  }),
-                  'md:w-auto'
-                )}
+                href={`${basePath}/test`}
+               
               >
                 {t('call_to_action')} <ArrowRightIcon />
               </Link>

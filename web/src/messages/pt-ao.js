@@ -17,6 +17,7 @@ const portugueseAo = {
     title: 'Teste de Personalidade Big Five',
     call_to_action: 'Faça um teste gratuito agora',
     no_registration: '* Não precisa se registrar',
+    make_registration: 'Crie uma conta para salvar seus resultados',
     tests_taken: 'Mais de <green>{n}</green> pessoas fizeram o teste',
     compare: {
       title: 'Compare-se com outros',

@@ -92,7 +92,16 @@ export default function Home({ params: { locale } }: Props) {
             <div className='flex flex-col md:flex-row items-center gap-4 justify-center'>
               <Link
                 href={`${basePath}/test`}
-               
+                className={clsx(
+                  buttonStyles({
+                    color: 'primary',
+                    radius: 'full',
+                    variant: 'shadow',
+                    size: 'lg',
+                    fullWidth: true
+                  }),
+                  'md:w-auto'
+                )}
               >
                 {t('call_to_action')} <ArrowRightIcon />
               </Link>
@@ -117,7 +126,7 @@ export default function Home({ params: { locale } }: Props) {
           </div>
 
           <div className='font-normal text-default-500 block max-w-full text-center underline'>
-            {t('no_registration')}
+            {t('make_registration')}
           </div>
         </section>
 

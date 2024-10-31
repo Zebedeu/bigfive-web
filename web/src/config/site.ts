@@ -33,7 +33,7 @@ export const languages: Language[] = [
 export const locales = languages.map((lang) => lang.code) as string[];
 
 export const siteConfig = {
-  name: 'Big Five Personality Test',
+  name: 'Big Five - KEPYA',
   creator: '@maccyber',
   description:
     'Learn to know yourself better with a free, open-source personality test.',
@@ -85,10 +85,6 @@ export const siteConfig = {
     {
       label: 'home',
       href: '/'
-    },
-    {
-      label: 'articles',
-      href: '/articles'
     },
     {
       label: 'privacy',

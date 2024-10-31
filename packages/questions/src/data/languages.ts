@@ -29,6 +29,7 @@ export type LanguageCode =
   | "hr"
   | "et"
   | "pt-br"
+  | "pt-ao"
   | "ar"
   | "he"
   | "pl"
@@ -62,6 +63,7 @@ const languages: Language[] = [
   { code: "hr", name: "Croatian" },
   { code: "et", name: "Estonian" },
   { code: "pt-br", name: "Brazilian Portuguese" },
+  { code: "pt-ao", name: "Portugues Angolano" },
   { code: "ar", name: "Arabic" },
   { code: "he", name: "Hebrew" },
   { code: "pl", name: "Polish" },
